@@ -7,85 +7,11 @@
     <meta name="description" content="Explore the delicious world of PP Waterballs, a pani puri company. Learn about our journey, watch our 'documentary', and enjoy this majestic take on business expansion.">
     <meta name="keywords" content="PP Waterballs, pani puri, golgappa, parody website, Jaspal Bhatti, Indian food humor, ppwaterball, pp waterball">
     <link rel="canonical" href="https://ppwaterballs.in/">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-            flex-grow: 1;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            max-width: 800px;
-            margin: 2rem auto;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            margin-top: auto;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .disclaimer {
-            font-size: 0.6em; /* Very small text */
-            opacity: 0.7; /* Slightly faded */
-            margin-bottom: 10px;
-        }
-        .copyright {
-            font-size: 0.9em;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <!--
+        AdSense: apply once 1-2 more original pages exist and have some organic traffic.
+        Once approved, the AdSense verification/auto-ads snippet goes here in <head>.
+    -->
 </head>
 <body>
     <header>
@@ -99,6 +25,10 @@
             <li><a href="#documentary">Documentary</a></li>
             <li><a href="#expertise">Our Expertise</a></li>
             <li><a href="#media">In the Media</a></li>
+            <li><a href="prospectus.html">Prospectus</a></li>
+            <li><a href="gmp-tracker.html">GMP Tracker</a></li>
+            <li><a href="investor-relations.html">Investor Relations</a></li>
+            <li><a href="merch.html">Merch</a></li>
         </ul>
     </nav>
 
@@ -108,6 +38,18 @@
             <p>PP Waterballs, formerly known as "Prem Prakash Golgappa", was created by two friends, Prem and Prakash. They became an instant hit among the crowds in Delhi with their delicious pani puri.</p>
             <p>Our journey took an unexpected turn when our founders overheard a conversation of Mr. Jaspal Bhatti, a CA and currently the financial brain behind PP Waterballs, about starting a public company. This led to the revolutionary idea of expanding our business by converting it into a public company and changing our name to "PP Waterballs".</p>
         </section>
+
+        <!--
+            Affiliate CTA: on-brand joke tying the "IPO" bit to real broker sign-ups.
+            TODO(owner): swap href below for your tracked affiliate/referral link once
+            enrolled in the Zerodha / Groww / Upstox partner program (pays per funded
+            account). Until then this points at the plain, non-affiliate sign-up page.
+        -->
+        <div class="cta-box">
+            <p><strong>Want in on the next 5000%-subscribed IPO?</strong></p>
+            <p>Before you apply for the PP Waterballs IPO, you'll need a demat account. (We don't actually have an IPO. But your broker doesn't need to know that.)</p>
+            <a class="cta-button" href="https://zerodha.com/open-account" target="_blank" rel="noopener">Open a Demat Account</a>
+        </div>
 
         <section id="documentary">
             <h2>PP Waterballs Documentary</h2>
@@ -129,16 +71,34 @@
         <section id="media">
             <h2>PP Waterballs in the Media</h2>
             <p>Our unique story has caught the attention of various media outlets:</p>
-            <ul>
-                <li><a href="https://economictimes.indiatimes.com/news/india/jaspal-bhattis-pp-waterballs-golgappa-video-meme-gets-viral-as-delhi-bike-dealers-rs-12-crore-ipo-gets-rs-5000-crore-subscriptions/articleshow/112828565.cms?from=mdr" target="_blank">Economic Times: PP Waterballs Golgappa Video Meme Goes Viral</a></li>
-                <li><a href="https://www.livemint.com/mint-top-newsletter/easynomics03082022.html" target="_blank">Livemint: Easynomics Newsletter Featuring PP Waterballs</a></li>
-                <li><a href="https://www.livemint.com/market/stock-market-news/gol-gappas-as-waterballs-vijay-kedia-has-a-hilarious-take-on-the-indian-ipo-rush-11626938062980.html" target="_blank">Livemint: Vijay Kedia's Hilarious Take on PP Waterballs and the Indian IPO Rush</a></li>
-            </ul>
+
+            <div class="media-item">
+                <h3>Economic Times covers the viral meme</h3>
+                <p>ET's report connects our "documentary" to the wave of oversubscribed retail IPOs it was riffing on in the first place, noting how a small Delhi bike dealer's real-world IPO drew thousands of times its offer size in subscriptions — the exact absurdity this site was built to spoof.</p>
+                <p class="source"><a href="https://economictimes.indiatimes.com/news/india/jaspal-bhattis-pp-waterballs-golgappa-video-meme-gets-viral-as-delhi-bike-dealers-rs-12-crore-ipo-gets-rs-5000-crore-subscriptions/articleshow/112828565.cms?from=mdr" target="_blank" rel="noopener">Read the full article on Economic Times &rarr;</a></p>
+            </div>
+
+            <div class="media-item">
+                <h3>Livemint's Easynomics newsletter</h3>
+                <p>Livemint's finance newsletter picked up the golgappa-IPO bit as a shorthand for retail-investor mania — a joke that lands precisely because the underlying subscription numbers in Indian markets were, and still are, genuinely wild.</p>
+                <p class="source"><a href="https://www.livemint.com/mint-top-newsletter/easynomics03082022.html" target="_blank" rel="noopener">Read the newsletter on Livemint &rarr;</a></p>
+            </div>
+
+            <div class="media-item">
+                <h3>Investor Vijay Kedia references the bit</h3>
+                <p>Veteran investor Vijay Kedia used the same golgappa comparison to make a serious point about IPO oversubscription trends, which Livemint covered — proof the joke traveled well beyond finance Twitter and into mainstream market commentary.</p>
+                <p class="source"><a href="https://www.livemint.com/market/stock-market-news/gol-gappas-as-waterballs-vijay-kedia-has-a-hilarious-take-on-the-indian-ipo-rush-11626938062980.html" target="_blank" rel="noopener">Read the article on Livemint &rarr;</a></p>
+            </div>
         </section>
     </div>
 
     <footer>
         <p class="disclaimer"><strong>Disclaimer:</strong> This is a parody website and has no relation to real life. All the characters and incidents in this story are fictitious and have no connection with any person or incident. If there is any similarity with any person, living or dead, or any real company, it would be considered a mere coincidence. This website is created for entertainment purposes only and should not be taken as factual information.</p>
+        <!--
+            TODO(owner): create a Buy Me a Coffee page and confirm this username before
+            relying on the link — it is a placeholder guess, not a verified account.
+        -->
+        <p><a class="support-link" href="https://www.buymeacoffee.com/ppwaterballs" target="_blank" rel="noopener">&#9749; Buy us a coffee (or a golgappa)</a></p>
         <p class="copyright">&copy; 2024 PP Waterballs. No rights reserved by site owner</p>
     </footer>
 </body>
