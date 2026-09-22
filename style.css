@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #222;
+}
+header {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0.25rem 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    flex-grow: 1;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.disclaimer {
+    font-size: 0.6em;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+.copyright {
+    font-size: 0.9em;
+}
+
+/* --- Monetization / CTA components --- */
+.cta-box {
+    background-color: #fff6e5;
+    border: 1px dashed #d9a441;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.cta-box p {
+    margin: 0.5rem 0;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #d9a441;
+    color: #222;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+.cta-button:hover {
+    background-color: #c8912f;
+}
+.support-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+}
+
+/* --- Prospectus page --- */
+.risk-factor {
+    background-color: #fdecea;
+    border-left: 4px solid #c0392b;
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+}
+table.financials {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+table.financials th, table.financials td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+table.financials th {
+    background-color: #f4f4f4;
+}
+
+/* --- GMP tracker --- */
+.gmp-ticker {
+    background-color: #111;
+    color: #0f0;
+    font-family: "Courier New", monospace;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 1.5rem 0;
+}
+.gmp-ticker .gmp-label {
+    font-size: 0.5em;
+    color: #9f9;
+    display: block;
+}
+.gmp-updated {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* --- Investor relations --- */
+.letter {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    font-family: "Georgia", serif;
+}
+.letter .signature {
+    margin-top: 1.5rem;
+    font-style: italic;
+}
+
+/* --- Merch --- */
+.merch-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+.merch-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.25rem;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.merch-card .merch-icon {
+    font-size: 2.5em;
+}
+.merch-card h3 {
+    margin: 0.5rem 0 0.25rem;
+}
+.merch-card .price {
+    font-weight: bold;
+    color: #444;
+}
+.coming-soon-badge {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.7em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+/* --- In the media --- */
+.media-item {
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+.media-item h3 {
+    margin-bottom: 0.25rem;
+}
+.media-item .source {
+    font-size: 0.85em;
+    color: #666;
+}
